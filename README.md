@@ -33,7 +33,7 @@ Finished 🔒              ───────▶
 🔐 Secure Encrypted Communication Begins
 
 🔐 Step-by-Step: How Encryption Keys Are Agreed Securely (TLS 1.2)
-1️⃣ ClientHello 📤
+## 1️⃣ ClientHello 📤
 
 Client sends:
 
@@ -45,7 +45,7 @@ Client Random
 
 No encryption yet
 
-2️⃣ ServerHello 📥
+## 2️⃣ ServerHello 📥
 
 Server selects:
 
@@ -55,7 +55,7 @@ Cipher suite (e.g., ECDHE_RSA + AES)
 
 Sends Server Random
 
-3️⃣ Server Authentication 📜
+## 3️⃣ Server Authentication 📜
 
 Server sends its digital certificate
 
@@ -73,11 +73,11 @@ Domain name
 
 Certificate validity
 
-4️⃣ Key Exchange 🔑
+## 4️⃣ Key Exchange 🔑
 
 Two common methods:
 
-🔹 RSA Key Exchange (Older)
+### 🔹 RSA Key Exchange (Older)
 
 Client generates Pre-Master Secret
 
@@ -85,7 +85,7 @@ Encrypts it using server’s public key
 
 Sends it to server
 
-🔹 ECDHE (Modern & Secure ✅)
+### 🔹 ECDHE (Modern & Secure ✅)
 
 Server sends ephemeral public key
 
@@ -95,7 +95,7 @@ Both compute the same shared secret
 
 Provides Perfect Forward Secrecy 🔁
 
-5️⃣ Session Key Derivation 🔐
+## 5️⃣ Session Key Derivation 🔐
 
 Both client and server independently compute:
 
@@ -112,13 +112,13 @@ MAC (integrity) key
 
 IV (Initialization Vector)
 
-6️⃣ ChangeCipherSpec 🔄
+## 6️⃣ ChangeCipherSpec 🔄
 
 Both sides signal:
 
 “From now on, use encryption 🔒”
 
-7️⃣ Finished Messages ✅
+## 7️⃣ Finished Messages ✅
 
 Encrypted handshake hash is exchanged
 
@@ -128,7 +128,7 @@ Keys match
 
 Handshake integrity
 
-8️⃣ Secure Communication Begins 🚀
+## 8️⃣ Secure Communication Begins 🚀
 
 All application data is encrypted using:
 
